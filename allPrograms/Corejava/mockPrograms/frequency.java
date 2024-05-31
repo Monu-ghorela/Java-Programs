@@ -1,0 +1,29 @@
+import java.util.Arrays;
+
+public class frequency {
+
+  public static void main(String[] args) {
+    int a[] = { 10, 20, 30, 10, 20, 30, 40 };
+    boolean[] visited = new boolean[a.length];
+    Arrays.fill(visited, false);
+
+    for (int i = 0; i < a.length; i++) {
+      int count = 1;
+      if (visited[i]) {
+        continue;
+        
+      }
+      for (int j = i + 1; j < a.length; j++) {
+        if (visited[i] == true) {
+          continue;
+         
+        }
+        if (a[i] == a[j]) {
+          count++;
+          visited[j] = true;
+        }
+      }
+      System.out.println("count of elemcytt of " + a[i] + " is " + count);
+    }
+  }
+}

@@ -1,0 +1,8 @@
+three types of elemnts 
+
+1.block elemnts
+2.inline element
+3.inline-block elemnts
+
+
+write down the differenec b/w inline and block elemnts with example.

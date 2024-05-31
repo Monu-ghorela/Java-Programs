@@ -1,0 +1,225 @@
+                                            SELECTORS
+
+
+selectors arem used to select and target any specific elemnts.
+therre are five types of selectors
+1.simple selector
+2.combinator selector
+3.attribute selector
+4.pseudo class selctor
+5.Psedo elemnt selctor
+
+
+
+1.simple selector:which can select any html elemnet based on id ,classname, tag
+(a) id selector
+(b)class selector
+(c)universal selctor
+(d)elemnt selector
+(e)grouping selector
+
+(a) id selector:used to target one elemnt 
+
+
+html:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./SimpleSelectors.css" />
+  </head>
+  <body>
+    <!-- id selector -->
+
+    <!-- <h1 id="FirstHeading">this is simple selectors</h1>
+    <h1 id="SecondHeading">this is simple selectors</h1>
+    <h1 id="ThirdHeading">this is simple selectors</h1> -->
+
+    <!-- class selector -->
+
+    <!-- <h1 class="headingAndParagraph">This is class selector</h1>
+    <p class="headingAndParagraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tempore
+      fugiat magni nemo hic tempora sequi vitae voluptatibus quia, sapiente
+      cupiditate perferendis, inventore ipsam eligendi est repellendus incidunt
+      animi placeat.
+    </p> -->
+
+    <!-- univrsal selector -->
+    <!-- <h1 id="heading" class="heading">this is universal selector</h1>
+    <p>
+      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Aliquid dicta necessitatibus neque distinctio culpa,
+      veritatis quidem. Modi tempore assumenda reiciendis unde nulla illum
+      voluptates rerum? Magni doloremque odio obcaecati magnam?
+    </p>
+    <h2>this is universal selector</h2> -->
+
+    <!-- tag selector -->
+
+    <!-- <h1>Lorem ipsum dolor sit amet.</h1>
+    <hr>
+    <hr>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima maiores placeat quo hic illum nihil cupiditate nulla exercitationem, commodi esse aut possimus magnam pariatur minus earum porro saepe expedita. Debitis.</p> -->
+    <!-- group selector -->
+
+
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, maiores ad similique soluta ipsum quis voluptate accusamus! Pariatur facilis quos eos alias, fugit dolore tenetur, cupiditate neque doloribus necessitatibus at!</p>
+
+    <!--  -->
+  </body>
+</html>
+
+
+
+
+
+css:
+*{
+    margin: 0;
+    padding: 0;
+}
+#FirstHeading{
+    color: blueviolet;
+    background-color: aqua;
+}
+#SecondHeading{
+    color: brown;
+    background-color: aquamarine;
+}
+#ThirdHeading{
+    color: cadetblue;
+    background-color: blue;
+}
+
+
+
+2.combinator selector :which can select any elemt by  specifying relation between the elemts
+
+
+(a).descendent selector(space)
+(b)child selector(>)
+(c)adjacent selector
+(d)general sibling selector
+
+
+(a)Decendent selector:combines two selector are such that elemts are matched by second selector are seleted if they have ancestor.
+    
+   (parent,parents' parent, parents' parents)
+
+   selctor utilites a descendents combinator are called descendent selectors 
+   
+   syntax:selector1 selector2{ property declaration} 
+
+
+
+(b)child selector:selcets the child elements of specified elements 
+   
+it is plcaed between 2 CSS selectors ,matched only those elemnts by second selector and direct child.
+
+
+syntax:selector 1>secltor 2{properties}
+
+
+(c)adjacent sibling selctor:the adjacent sibling combinator(+)separates two selectors and matched the second elemnt .
+ 
+  only if immediately follows the firrst element ,and both are children of the same parent elemnt.
+
+syntax:former elemtnt+target elemnt{style/properties}
+
+
+
+(d)general sibling selector:  the general sibling selector selects all elemnts that are next sibling of a specified element
+
+                            the generl sibling combinator (~) separates two selectors and matches all iteration of the second elemtns that are following the first elemnt          (through not necessaarily immediately) and are chiildren of the same parent elemnt.
+
+
+syntax:
+formaer elemnt~ target elemnts{style properties}
+
+
+
+3.Attribute selector:Attribute provides extra information to the tag
+
+syntax:Selector[Attribute]  :{
+property:value;
+}
+
+
+4.Psedso class selector:a  psedo class is a keyword added to a selector that specify a special state of the selectd elem .
+
+
+syntax:
+
+selector :
+pseudo-class {
+property:value;
+}
+
+
+
+type of pseudo class 
+a.dynamic pseuso class
+.link
+.visited
+.active
+.focus
+.hover
+
+b.ui elment pseudo classes 
+
+.enabled
+.disabled
+.checked
+
+c.Structural psudo classes
+
+.first child
+.last-child
+.nth-child()
+.first-of-type
+.last-of type
+
+
+
+5.pseudo elemnt selector :styles speicified parts of an elemnt 
+
+syntax:
+selector::pseudo elemnt{
+
+property :value;
+}
+
+pseudo elemnts:
+
+::first line
+::first-letter
+::after
+::before
+::marker
+::selection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
